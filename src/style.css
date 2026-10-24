@@ -233,3 +233,157 @@ body{color:#18243a}
 .team-card .team-image-empty { background: transparent; }
 .team-card .team-image-empty:after { display: none; }
 .contact-details > p { color: #111827 !important; }
+<<<<<<< HEAD
+
+
+/* Requested accessibility refinements: brighter brand blue and readable lists on light surfaces. */
+:root { --accent: #1556B9; --accent-blue: #1556B9; }
+/* Keep the header logo unchanged; the footer uses its dedicated supplied wordmark asset. */
+.footer-brand img { filter: none !important; }
+/* Use the requested blue only on light backgrounds; preserve pale/white accents on dark panels. */
+body:not(.dark) .blue,
+.home-intro .blue,
+.page-hero .blue,
+.section:not(.dark-band):not(.blue-band) .blue,
+.position-card:not(:nth-child(2)) .blue,
+.info-card .blue,
+.team-info .blue,
+.contact-form .blue,
+.contact-details .blue { color: #1556B9 !important; }
+/* Ensure bullet points and list text are clearly visible on white/off-white cards and sections. */
+.section:not(.dark-band):not(.blue-band) ul,
+.section:not(.dark-band):not(.blue-band) .simple-list,
+.service-detail ul,
+.division-detail ul,
+.position-card:not(:nth-child(2)) ul,
+.position-card:not(:nth-child(2)) .simple-list,
+.info-card ul,
+.value-card ul,
+.workflow-step ul,
+.team-card ul,
+.contact-details ul {
+  color: #111827 !important;
+  list-style: disc;
+  list-style-position: outside;
+}
+.section:not(.dark-band):not(.blue-band) li::marker,
+.service-detail li::marker,
+.division-detail li::marker,
+.position-card:not(:nth-child(2)) li::marker,
+.info-card li::marker,
+.value-card li::marker,
+.workflow-step li::marker,
+.team-card li::marker,
+.contact-details li::marker { color: #111827 !important; }
+/* The dark production-services positioning card and other dark panels retain their existing light text. */
+.position-card:nth-child(2) ul,
+.position-card:nth-child(2) li { color: #A9C8FF !important; }
+
+/* Final requested contrast refinements */
+.hero-home h1 .blue {
+  color: #A9C8FF !important;
+}
+.cta-panel .eyebrow,
+.cta-panel .eyebrow *,
+.cta-panel .eyebrow span {
+  color: #A9C8FF !important;
+}
+.position-card:nth-child(2) p,
+.position-card:nth-child(2) .copy-block p,
+.position-card:nth-child(2) .lead {
+  color: #FFFFFF !important;
+}
+
+/* FIX: Improve readability and restore visible bullets on the dark production-services card. */
+.position-card:nth-child(2) p {
+  color: #FFFFFF !important;
+}
+.position-card:nth-child(2) ul.simple-list {
+  list-style: disc !important;
+  list-style-position: outside !important;
+  padding-left: 1.25rem !important;
+}
+.position-card:nth-child(2) ul.simple-list li {
+  display: list-item !important;
+  color: #A9C8FF !important;
+}
+.position-card:nth-child(2) ul.simple-list li::marker {
+  color: #FFFFFF !important;
+}
+
+
+/* FINAL HOVER-CONTRAST FIX: cards that turn navy on hover must keep readable text. */
+.info-card:hover,
+.info-card:hover h1,
+.info-card:hover h2,
+.info-card:hover h3,
+.info-card:hover h4,
+.info-card:hover p,
+.info-card:hover .card-index,
+.info-card:hover .eyebrow,
+.info-card:hover .text-link,
+.info-card:hover li,
+.info-card:hover a {
+  color: #FFFFFF !important;
+}
+.info-card:hover .card-index,
+.info-card:hover .eyebrow,
+.info-card:hover .text-link,
+.info-card:hover li,
+.info-card:hover a:hover {
+  color: #A9C8FF !important;
+}
+.info-card:hover li::marker {
+  color: #FFFFFF !important;
+}
+
+/* Division cards may use the same dark hover treatment; override nested card text too. */
+.division-card:hover,
+.division-card:hover .info-card {
+  background: #1b2230 !important;
+  color: #FFFFFF !important;
+}
+.division-card:hover .info-card h3,
+.division-card:hover .info-card p,
+.division-card:hover .info-card li,
+.division-card:hover .info-card a {
+  color: #FFFFFF !important;
+}
+.division-card:hover .info-card .card-index,
+.division-card:hover .info-card .text-link,
+.division-card:hover .info-card .eyebrow {
+  color: #A9C8FF !important;
+}
+.division-card:hover .info-card li::marker {
+  color: #FFFFFF !important;
+}
+
+/* The two contact information cards also turn dark on hover. */
+.contact-details .info-card:hover h3,
+.contact-details .info-card:hover h3 a,
+.contact-details .info-card:hover p {
+  color: #FFFFFF !important;
+}
+.contact-details .info-card:hover .card-index,
+.contact-details .info-card:hover .eyebrow {
+  color: #A9C8FF !important;
+}
+
+/* Production Company positioning-card paragraph stays white on all interaction states. */
+.position-card:nth-child(2) p,
+.position-card:nth-child(2):hover p {
+  color: #FFFFFF !important;
+}
+
+
+/* About page: keep the Production Company description readable on the dark card. */
+.position-card p{color:#fff!important;}
+
+/* Explicit contrast for the dark Production Company card. */
+.position-card.production-company-card p,
+.position-card.production-company-card p:hover,
+.position-card.production-company-card:hover p { color: #FFFFFF !important; opacity: 1 !important; -webkit-text-fill-color: #FFFFFF !important; }
+.position-card.production-company-card .simple-list li { color: #A9C8FF !important; opacity: 1 !important; }
+.position-card.production-company-card .simple-list li::marker { color: #FFFFFF !important; }
+=======
+>>>>>>> a8a63edf09097d4dc68456a332f75fad60e3916d
