@@ -233,7 +233,6 @@ body{color:#18243a}
 .team-card .team-image-empty { background: transparent; }
 .team-card .team-image-empty:after { display: none; }
 .contact-details > p { color: #111827 !important; }
-<<<<<<< HEAD
 
 
 /* Requested accessibility refinements: brighter brand blue and readable lists on light surfaces. */
@@ -385,5 +384,3 @@ body:not(.dark) .blue,
 .position-card.production-company-card:hover p { color: #FFFFFF !important; opacity: 1 !important; -webkit-text-fill-color: #FFFFFF !important; }
 .position-card.production-company-card .simple-list li { color: #A9C8FF !important; opacity: 1 !important; }
 .position-card.production-company-card .simple-list li::marker { color: #FFFFFF !important; }
-=======
->>>>>>> a8a63edf09097d4dc68456a332f75fad60e3916d
